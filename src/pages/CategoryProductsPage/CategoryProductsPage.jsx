@@ -1,4 +1,3 @@
-// src/pages/CategoryProductsPage/CategoryProductsPage.jsx
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom"; 
@@ -24,7 +23,7 @@ const CategoryProductsPage = () => {
   }
 
   if (!Array.isArray(products) || products.length === 0) {
-    return <div>No products available.</div>; // Сообщение об ошибке
+    return <div>No products available.</div>;
   }
 
   return (
