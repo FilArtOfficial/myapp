@@ -11,10 +11,8 @@ const cartSlice = createSlice({
     addToCart: (state, action) => {
       const item = state.items.find((i) => i.id === action.payload.id);
       if (item) {
-        // Увеличиваем количество товара в корзине на переданное количество
         item.quantity += action.payload.quantity || 1;
       } else {
-        // Добавляем новый товар с указанным количеством
         state.items.push({ ...action.payload, quantity: action.payload.quantity });
       }
     },
@@ -25,7 +23,7 @@ const cartSlice = createSlice({
       const { id, quantity } = action.payload;
       const item = state.items.find((i) => i.id === id);
       if (item && quantity > 0) {
-        item.quantity = quantity; // Обновляем количество только если оно больше 0
+        item.quantity = quantity;
       }
     },
     clearCart: (state) => {
