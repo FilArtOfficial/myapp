@@ -1,0 +1,63 @@
+.categoriesPage {
+  padding: 20px;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif; /* Убедитесь, что используете нужный шрифт */
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Используем auto-fit для адаптации */
+  gap: 20px;
+  justify-content: center; /* Центрируем сетку */
+  max-width: 1200px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto; /* Центрируем контейнер по горизонтали */
+  padding: 20px;
+}
+
+.categoryItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.categoryItem:hover {
+  transform: scale(1.05);
+}
+
+.categoryImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.categoryName {
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif; /* Убедитесь, что используете нужный шрифт */
+  margin: 10px 0;
+}
+
+a {
+  color: #333; /* Задаем единый цвет */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:visited {
+  color: #333; /* Цвет после посещения */
+}
+
+a:hover {
+  color: #555; /* Цвет при наведении */
+  text-decoration: underline; /* Можно добавить подчеркивание при наведении */
+}
+
+a:active {
+  color: #333; /* Цвет при клике */
+}

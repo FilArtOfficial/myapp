@@ -1,0 +1,126 @@
+/* Общие стили для страницы корзины */
+.cartPage {
+    padding: 20px;
+  }
+  
+  .cartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .cartHeader h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .backButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: #000;
+  }
+  
+  /* Контейнер для товаров и формы */
+  .cartContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .cartItems {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cartItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cartItem img {
+    max-width: 100px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .itemDetails {
+    flex: 1;
+  }
+  
+  .quantityControls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .quantityControls button {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Стили для кнопки удаления */
+  .removeButton {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Стили для блока заказа и формы */
+  .orderDetails {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+  }
+  
+  .orderDetails h2 {
+    margin-bottom: 10px;
+  }
+  
+  .orderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .orderForm input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .orderButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .orderButton:hover {
+    background-color: black;
+    color: white;
+  }
+  

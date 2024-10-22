@@ -1,0 +1,48 @@
+.categoryProductsPage {
+  padding: 20px;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.productItem {
+  text-align: center;
+}
+
+.productImage {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.productName {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.productPrice {
+  font-size: 16px;
+  color: #666;
+}
+
+.productWrapper {
+  border: 1px solid #ccc; /* Пример рамки */
+  padding: 10px; /* Пример внутреннего отступа */
+  text-align: center; /* Центрирование текста */
+  transition: transform 0.2s; /* Анимация при наведении */
+}
+
+.productWrapper:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}

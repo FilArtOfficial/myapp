@@ -1,0 +1,64 @@
+.productsPage {
+  padding: 20px;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif; /* Используем стандартный шрифт для проверки */
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.productItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.productItem:hover {
+  transform: scale(1.05);
+}
+
+.productImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.productName {
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  margin: 10px 0;
+}
+
+.productPrice {
+  font-size: 1rem;
+  color: #333;
+}
+
+a {
+  color: #333; /* Задаем единый цвет */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:visited {
+  color: #333; /* Цвет после посещения */
+}
+
+a:hover {
+  color: #555; /* Цвет при наведении */
+  text-decoration: underline; /* Можно добавить подчеркивание при наведении */
+}
+
+a:active {
+  color: #333; /* Цвет при клике */
+}
