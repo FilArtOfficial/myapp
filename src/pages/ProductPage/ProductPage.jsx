@@ -26,7 +26,6 @@ const ProductPage = () => {
 
   if (!product) return <div>Loading...</div>;
 
-  // Рассчитываем динамическую цену (цена за товар * количество)
   const totalPrice = (product.price * quantity).toFixed(2);
 
   return (
