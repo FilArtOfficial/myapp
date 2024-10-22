@@ -1,8 +1,8 @@
 import React from 'react';
-import instagramIcon from '../../assets/instagram.png'; // Custom social media icons
+import instagramIcon from '../../assets/instagram.png';
 import whatsappIcon from '../../assets/whatsapp.png';
-import Map from '../Map/Map'; // Import the map component
-import styles from './Footer.module.css'; // Styles for Footer
+import Map from '../Map/Map';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
@@ -28,7 +28,7 @@ const Footer = () => {
           <p className={styles.cardText}>24 hours a day</p>
         </div>
       </div>
-      <Map /> {/* Add the map component */}
+      <Map />
     </footer>
   );
 };
