@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/logo.png'; // Кастомное лого
-import cartIcon from '../../assets/cart.png'; // Кастомная иконка корзины
-import styles from './Navbar.module.css'; // Стили для Navbar
+import logo from '../../assets/logo.png';
+import cartIcon from '../../assets/cart.png';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
