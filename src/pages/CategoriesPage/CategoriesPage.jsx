@@ -27,7 +27,7 @@ const CategoriesPage = () => {
       <div className={styles.categoryGrid}>
         {categories.map((category) => (
           <Link 
-            to={`/categories/${category.id}`} // Изменено на /categories/${category.id}
+            to={`/categories/${category.id}`}
             key={category.id}
             className={styles.categoryItem}
           >
