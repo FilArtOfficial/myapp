@@ -42,7 +42,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
-    width: 200px; /* Примерно равная ширина кнопке */
+    width: 200px;
     justify-content: space-between;
   }
   
