@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../redux/slices/productsSlice";
-import { Link } from "react-router-dom"; // Добавляем Link
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import styles from './AllProductsPage.module.css'; // Правильный импорт
+import styles from './AllProductsPage.module.css';
 
 const AllProductsPage = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,6 @@ const AllProductsPage = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    // Фильтрация продуктов
     let filtered = [...products];
     if (priceRange.min || priceRange.max) {
       filtered = filtered.filter((product) => {
@@ -30,7 +29,6 @@ const AllProductsPage = () => {
       });
     }
 
-    // Сортировка
     if (sortBy === "newest") {
       filtered.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
     } else if (sortBy === "price-low-high") {
