@@ -1,8 +1,6 @@
-// src/redux/slices/productsSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// Асинхронный запрос для получения всех продуктов
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async () => {
@@ -11,12 +9,11 @@ export const fetchProducts = createAsyncThunk(
   }
 );
 
-// Асинхронный запрос для получения продуктов по категории
 export const fetchProductsByCategory = createAsyncThunk(
   'products/fetchByCategory',
   async (categoryId) => {
     const response = await axios.get(`http://localhost:3333/categories/${categoryId}`);
-    return response.data.data; // Изменено на response.data.data
+    return response.data.data;
   }
 );
 
@@ -44,7 +41,7 @@ const productsSlice = createSlice({
       })
       .addCase(fetchProductsByCategory.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        state.data = action.payload; // Теперь это массив продуктов
+        state.data = action.payload;
       })
       .addCase(fetchProductsByCategory.rejected, (state) => {
         state.status = 'failed';
