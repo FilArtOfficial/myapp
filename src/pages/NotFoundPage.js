@@ -1,4 +1,3 @@
-// pages/NotFoundPage/NotFoundPage.js
 function NotFoundPage() {
     return (
       <div>
