@@ -34,7 +34,7 @@ const HomePage = () => {
       <div className={styles.categoryGrid}>
         {categories.map((category) => (
           <div key={category.id} className={styles.categoryItem}>
-            <Link to={`/categories/${category.id}`}> {/* Изменено на /categories/${category.id} */}
+            <Link to={`/categories/${category.id}`}>
               <img src={`http://localhost:3333${category.image}`} alt={category.title} />
               <p>{category.title}</p>
             </Link>
