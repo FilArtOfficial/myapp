@@ -17,7 +17,6 @@ const CartPage = () => {
     dispatch(removeFromCart(id));
   };
 
-  // Рассчитываем общую стоимость всех товаров в корзине
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
@@ -32,7 +31,6 @@ const CartPage = () => {
       <div className={styles.cartContent}>
         <div className={styles.cartItems}>
           {cart.map((item) => {
-            // Рассчитываем цену для каждого товара в зависимости от его количества
             const itemTotalPrice = (item.price * item.quantity).toFixed(2);
 
             return (
@@ -41,7 +39,7 @@ const CartPage = () => {
                 <div className={styles.itemDetails}>
                   <h3>{item.title}</h3>
                   <p>Price per unit: ${item.price}</p>
-                  <p>Total Price: ${itemTotalPrice}</p> {/* Динамическая цена */}
+                  <p>Total Price: ${itemTotalPrice}</p>
                   <div className={styles.quantityControls}>
                     <button
                       onClick={() =>
