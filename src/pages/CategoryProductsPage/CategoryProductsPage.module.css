@@ -37,12 +37,12 @@
 }
 
 .productWrapper {
-  border: 1px solid #ccc; /* Пример рамки */
-  padding: 10px; /* Пример внутреннего отступа */
-  text-align: center; /* Центрирование текста */
-  transition: transform 0.2s; /* Анимация при наведении */
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
 }
 
 .productWrapper:hover {
-  transform: scale(1.05); /* Увеличение при наведении */
+  transform: scale(1.05);
 }
